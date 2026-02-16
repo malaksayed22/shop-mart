@@ -27,10 +27,10 @@ export default async function page() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 container px-40 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container px-4 sm:px-6 md:px-10 lg:px-20 mt-5">
         {data.data?.map((product) => (
-          <div key={product.id} className="p-2">
-            <Card className="overflow-hidden pt-0">
+          <div key={product.id}>
+            <Card className="overflow-hidden pt-0 h-full flex flex-col">
               <Link href={"/products/" + product.id}>
                 <div className="-m-1 -mt-6">
                   <Image
