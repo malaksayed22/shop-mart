@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { NextAuthOptions } from "next-auth";
+import { UserInterface } from "@/Interfaces/AuthInterfaces";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -52,7 +53,7 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
     async session({ session, token }) {
-      session.user = token.userRes;
+      session.user = token.userRes as UserInterface;
       session.token = token.tokenRes as string;
 
       return session;

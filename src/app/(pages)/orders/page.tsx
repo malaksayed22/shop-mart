@@ -32,7 +32,7 @@ export default async function OrdersPage() {
     );
   }
 
-  const orders = result.data || [];
+  const orders = result.data?.data || [];
   // Reverse orders to show the most recent first
   const reversedOrders = [...orders].reverse();
   console.log("Passing orders to component:", reversedOrders);
