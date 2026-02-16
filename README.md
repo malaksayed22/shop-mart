@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShopMart - Next.js E-Commerce Application
 
-## Getting Started
+A modern, full-featured e-commerce application built with Next.js 16, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## ✨ Features
+
+- 🛍️ **Product Catalog** - Browse products by categories and brands
+- 🛒 **Shopping Cart** - Add/remove items, update quantities, apply coupons
+- ❤️ **Wishlist** - Save favorite products
+- 🔐 **Authentication** - Secure login/register with NextAuth
+- 📦 **Order Management** - Track orders and view order history
+- 💳 **Multiple Payment Methods** - Cash on delivery & online payment
+- 📱 **Responsive Design** - Mobile-first approach
+- ⚡ **React Server Components** - Optimized performance
+- 🎨 **Modern UI** - Built with Radix UI and Tailwind CSS
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 16.1.6
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **UI Components:** Radix UI
+- **Authentication:** NextAuth.js
+- **Form Handling:** React Hook Form + Zod
+- **State Management:** React Hooks + Server Actions
+- **Notifications:** Sonner
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm/yarn/pnpm
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd shop-mart
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Set up environment variables
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` and update with your values.
+
+4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── actions/          # Server actions
+├── app/             # App router pages
+│   ├── (pages)/    # Route groups
+│   └── api/        # API routes
+├── components/      # React components
+├── Interfaces/      # TypeScript interfaces
+├── lib/            # Utility functions
+└── types/          # Type definitions
+```
 
-## Learn More
+## 🔑 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+See `.env.example` for required environment variables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## 📝 Features in Detail
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Login/Register with email & password
+- Password reset functionality
+- Protected routes middleware
+- Session management
+
+### Shopping Experience
+
+- Product listing with filters
+- Product details page
+- Add to cart/wishlist
+- Cart management (update quantities, remove items)
+- Coupon code support
+
+### Checkout & Orders
+
+- Shipping address form
+- Cash on delivery option
+- Online payment integration
+- Order history tracking
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
